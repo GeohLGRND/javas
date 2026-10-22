@@ -154,6 +154,10 @@ let cupom = true;
 
 if(Assinante == true && compraUWU >= 150 || cupom == true){
     console.log(`você tem direito ao desconto`);
-    console.log(`total final ${compraUWU * 0.85}`);
+    console.log(`total final: ${compraUWU * 0.85}`);
 
+}else{
+    console.log("você não tem direito ao desconto");
+    console.log(`total final: ${compraUWU}`);
+    
 }
