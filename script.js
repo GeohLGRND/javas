@@ -70,14 +70,90 @@ let idadevotação = 16
 if (idadevotação > 70) {
     console.log("você não é obrigado a votar");
 
-} else if (idadevotação >= 18) {
+} else if (idadevotação >= 18)
     //senão a idade da pessoa for maior ou igual a 18
     console.log("VÁ VOTAR")
-} else if{
-    //senão a idade da pessoa for maior ou igual a 16
-    console.log ("você não é obrigado a votar, mas pode")
+
+
+
+let idadeDirigir = 19;
+let CNH = true;
+let temCarro = false;
+
+if(idadeDirigir >= 18 && CNH == true && temCarro == true){
+    console.log("você pode dirigir");
+    
+}else{
+    console.log("você não pode dirigir");
 }
-else {
-    //senão for nenhuma das anteriores
-    console.log("você NÃO pode votar");
+
+let ehProfessor = false
+let ehAluno = false
+
+if(ehProfessor == true || ehAluno == true){
+    console.log("você tem direito a meia entrada");
+    
+}else{
+    console.log("não tem direito a meia entrada");
+    
+}
+
+// && = e
+// || = ou
+
+// parte 1-------------------------
+
+let numeros = 10;
+
+if (numeros >= 10 && numeros < 50) {
+    console.log("está entre o intervalo");
+    
+}else{
+    console.log("está fora do intervalo");
+    
+}
+
+let idadeCand = 35;
+
+if(idadeCand >= 16 && idadeCand < 25){
+    console.log("atedeu os requisitos");
+    
+}else{
+console.log("não atendeu os requisitos");
+    
+}
+
+// parte 2-----------------------------
+
+
+let valorCompra = 134;
+let ehAssinante = true;
+
+if(valorCompra >= 200 || ehAssinante == true){
+    console.log("você não tem direito a frete gratis");
+}else{
+    console.log("você tem direito a frete gratis");
+}
+
+
+let diaDSemana = "segunda"
+
+if(diaDSemana == "sabado" || diaDSemana == "domingo"){
+    console.log("uaaau, aproveite seu fim de semana");
+    
+}else{
+    console.log("vai trabaia");
+    
+}
+
+//parte 3 ------------------------------
+
+let compraUWU = 200
+let Assinante = false;
+let cupom = true;
+
+if(Assinante == true && compraUWU >= 150 || cupom == true){
+    console.log(`você tem direito ao desconto`);
+    console.log(`total final ${compraUWU * 0.85}`);
+
 }
